@@ -1,4 +1,5 @@
 const Sequelize = require('sequelize');
+const {Op} = require('sequelize');
 
 const sequelize = new Sequelize({
   database: 'tweets_db',
@@ -16,7 +17,8 @@ const Tweets = sequelize.define('tweet',{
 })
 module.exports = {
   sequelize,
-  Tweets
+  Tweets,
+  Op
 }
 //create your model here:
 //1. Write a sequelize model for tweets. It should include columns for

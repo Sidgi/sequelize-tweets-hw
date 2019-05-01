@@ -1,5 +1,5 @@
 //use this data for your seed data
-
+const Data = [
   {
     "text": "I'm releasing new music this month",
     "hashtag": "#new",
@@ -31,3 +31,7 @@
     "hashtag": "#glowup",
     "retweets": 42
   }
+]
+module.exports = {
+  Data
+};
